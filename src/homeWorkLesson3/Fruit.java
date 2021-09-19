@@ -7,5 +7,7 @@ abstract class Fruit {
         this.waight = waight;
     }
 
-
+    public float getWaight() {
+        return waight;
+    }
 }

@@ -1,7 +1,12 @@
 package homeWorkLesson3;
 
 public class Apple extends Fruit {
-    public Apple(float waight) {
+    public Apple() {
         super(1.0f);
+    }
+
+    @Override
+    public String toString() {
+        return "яблоки";
     }
 }
