@@ -1,9 +1,6 @@
 package lesson4;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Objects;
+import java.util.*;
 
 public class Cat implements Comparable<Cat> {
     private String name;
@@ -86,6 +83,14 @@ public class Cat implements Comparable<Cat> {
         System.out.println(integerHashSet);
         LinkedHashSet<Integer> integerLinkedHashSet = new LinkedHashSet<>(Arrays.asList(1, 3, 5, 6, 7, 22, 4, 1, 6));
         System.out.println(integerLinkedHashSet);
+
+        TreeSet<Cat> catTreeSet = new TreeSet<>(new CatComparatorByWeight());
+        catTreeSet.add(cat1);
+        catTreeSet.add(cat2);
+        catTreeSet.add(cat3);
+        catTreeSet.add(cat4);
+
+        System.out.println(catTreeSet);
     }
 
     @Override
